@@ -1,0 +1,13 @@
+{
+  "name": "arch-studio-multi-page-website",
+  "version": "1.0.0",
+  "description": "![Design preview for the Arch Studio multi-page website coding challenge](./preview.jpg)",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build:css": "tailwindcss build -i src/styles.css -o dist/output.css",
+    "tailwind": "npx tailwindcss -i src/styles.css -o dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

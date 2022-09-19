@@ -1,0 +1,22 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.img-wrapper{
+    @apply lg:relative
+}
+
+.img-content{
+    @apply lg:transition lg:delay-100 lg:ease-in-out lg:opacity-0
+}
+
+.img-content:hover{
+    @apply lg:opacity-100 lg:cursor-pointer
+}
+
+
+.img-content{
+    @apply lg:absolute lg:inset-0 lg:text-2xl lg:p-4 lg:bg-about-bg-hover lg:flex lg:justify-evenly lg:items-center
+}
