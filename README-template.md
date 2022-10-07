@@ -57,41 +57,30 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
+- [Leaflet.JS]https://leafletjs.com/
+- [Swiper.JS](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-### What I learned
+## Reflection
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Finally finished this multi-pager. This was my first official project that I completed using TailwindCSS. I did start small projects to get a feel of how to approach the design process with using tailwind, but it wasn't anything worth publishing, just sandboxing. 
 
-To see how you can add code snippets, see below:
+However, this one was a very satisfying challenge to complete. Using tailwind with this project, introduced me to a lot of new concepts and ways to restructure my design process. With tailwind, approaching projects at a mobile-first approach is vital. Of course, it is good practice to do so, whether or not you are using tailwind, but this framework really pushes that. 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+Given that it's my first project using tailwind, I'm certain syntax and structuring could use a lot ore refinement, that's why I am 100% open to any and all suggestions regarding that area. As well as any improvements to how to best make the project more efficient and easy to understand. 
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I did try out the bonus challenge for the mapping part. I used leaflet.JS API as suggested in the challenge. I find utilizing APIs a very fun challenge and something I want to get much better at using. Additionally, I used swiper.JS for the slider part of the home page. 
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+For some reason, github pages wouldn't render all my files, only partially. So i had to publish it through netlify and connect my github repo. If there's a way to shorten that process, please let me know. I initially had a "dist" folder for all my html files and css file, but for some reason github wouldn't process it, so i had to move them all to the root folder of my project. Which solved the problem and I was able to publish everything. 
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- As this was my first official project with Tailwind, I do want to learn best practices on file organization, organization of the syntax in the tailwin.config file
+- Structuring and connecting my files properly so that when I publish it, there aren't any publishing or connectivity problems
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+
 
 ### Useful resources
 
