@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <script src="home.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Arch Studio - Home</title>
+</head>
+
+
+<body class="font-league-spartan">
+    <header>
+        <nav
+            class="flex items-align justify-between w-auto m-8 md:w-9/12 md:h-[40px] md:ml-[97px] md:mt-14 lg:justify-start lg:gap-[95px]">
+            <div id="logo">
+                <img src="/assets/logo.svg" alt="logo">
+            </div>
+            <span class="text-3xl cursor-pointer flex items-center md:hidden " onclick="Menu(this)">
+                <ion-icon name="menu-outline"></ion-icon>
+            </span>
+            <ul
+                class="z-10 items-center text-v-dark-blue font-bold text-[32px] flex-col absolute top-[100px] w-full h-[235px] gap-[17px] left-0 hidden bg-v-light-grey">
+                <li class="mt-[17px]"><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <ul
+                class=" hidden md:flex md:items-center md:justify-between md:text-med-grey md:font-bold md:text-lg md:w-9/12 lg:w-nav-desktop-width lg:gap-[51px]">
+                <li><a class="lg:transition lg:delay-250 lg:ease-in lg:hover:text-v-dark-blue"
+                        href="./portfolio.html">Portfolio</a></li>
+                <li><a class="lg:hover:text-v-dark-blue lg:transition lg:delay-250 lg:ease-in" href="./about.html">About
+                        Us</a></li>
+                <li><a class="lg:hover:text-v-dark-blue lg:transition lg:delay-250 lg:ease-in"
+                        href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home-side-label" class="hidden md:block md:h-6 md:w-[272px] md:relative md:rotate-90">
+        <span id="line"
+            class="hidden md:block md:h-[1px] md:w-[104px] md:bg-light-grey md:absolute md:top-[101px]"></span>
+        <span id="side-label"
+            class="hidden md:block md:text-light-grey md:font-medium md:text-lg md:tracking-[18px] md:uppercase md:left-[152px] md:bottom-[50px] md:top-[85px] md:absolute">Home</span>
+    </div>
+
+    <!--Swiper-->
+    <div class="swiper w-auto h-[560px] md:h-[720px] lg:w-80-width md:ml-0 lg:m-0">
+        <div class="swiper-wrapper">
+            <!--Slides-->
+            <div id="paramour"
+                class="swiper-slide bg-paramour-hero-mobile bg-no-repeat bg-center md:bg-paramour-hero-tablet md:bg-no-repeat md:bg-center lg:bg-paramour-hero-desktop lg:bg-no-repeat lg:bg-center w-auto h-paramour-height md:w-9/12 md:h-[720px] md:mt-14 lg:w-80-width lg:my-0 lg:mx-auto">
+                <div id="paramour-content"
+                    class="w-4/5 mx-8 relative md:h-[355px] lg:w-1/2 lg:left-[100px] lg:right-[376px]">
+                    <h1
+                        class="text-5xl text-white w-auto h-24 mb-3 absolute mt-paramour-margin-top font-bold md:text-8xl md:w-[457px] md:h-[160px] md:mt-0 md:top-[175px] md:left-[100px] lg:left-0">
+                        Project Paramour</h1>
+                    <p
+                        class="text-white text-lg h-20 leading-6 mb-20 absolute top-[223px] w-auto md:w-8/12 md:h-[72px] md:top-[370px] md:left-[100px] lg:left-0">
+                        Project mode for an art museum near Southwest London. Project Paramour
+                        is a statement of bold, modern architecture.
+                    </p>
+
+                    <a href="./portfolio.html"><button id="portfolio"
+                            class="bg-v-dark-blue w-btn-width h-btn-height text-white text-lg font-bold mr-14 absolute top-[378px] flex items-center justify-evenly md:top-[475px] md:left-[100px] lg:transition lg:delay-250 lg:ease-in lg:hover:bg-med-grey lg:left-0">
+                            See Our Portfolio <span class="flex items-center text-1xl">
+                                <ion-icon class="text-3xl" name="arrow-forward-outline"></ion-icon>
+                            </span>
+                        </button></a>
+                </div>
+            </div>
+
+            <div id="seraph"
+                class="swiper-slide bg-seraph-hero-mobile bg-no-repeat bg-center md:bg-seraph-hero-tablet lg:bg-seraph-hero-desktop">
+                <div id="seraph-content"
+                    class="w-4/5 mx-8 relative md:w-[576px] md:h-[355px] lg:w-1/2 lg:left-[190px] lg:right-[376px]">
+                    <h1
+                        class="text-5xl text-white w-auto h-24 mb-3 absolute mt-paramour-margin-top font-bold md:text-8xl md:w-[457px] md:h-[160px] md:mt-0 md:top-[175px] md:left-[100px] lg:left-0">
+                        Seraph Station</h1>
+                    <p
+                        class="text-white text-lg h-20 leading-6 mb-20 absolute top-[223px] w-auto md:w-8/12 md:h-[72px] md:top-[370px] md:left-[100px] lg:left-0">
+                        The Seraph Station project challenged us to design a unique station that would transport people
+                        through time.
+                        The result is a fresh and futuristic model inspired by space stations.
+                    </p>
+
+                    <a href="./portfolio.html"><button id="portfolio"
+                            class="bg-v-dark-blue w-btn-width h-btn-height text-white text-lg font-bold mr-14 absolute top-[378px] flex items-center justify-evenly md:left-[100px] md:top-[475px] lg:transition lg:delay-250 lg:ease-in lg:hover:bg-med-grey lg:left-0">
+                            See Our Portfolio <span class="flex items-center text-1xl">
+                                <ion-icon class="text-3xl" name="arrow-forward-outline"></ion-icon>
+                            </span>
+                        </button></a>
+                </div>
+            </div>
+
+            <div id="federal"
+                class="swiper-slide bg-federal-hero-mobile bg-center bg-no-repeat md:bg-federal-hero-tablet lg:bg-federal-hero-desktop">
+                <div id="federal-content"
+                    class="w-4/5 mx-8 relative md:w-[576px] md:h-[355px] lg:w-1/2 lg:left-[190px] lg:right-[376px]">
+                    <h1
+                        class="text-5xl text-white w-auto h-24 mb-3 absolute mt-paramour-margin-top font-bold md:text-8xl md:w-[457px] md:h-[160px] md:mt-0 md:top-[175px] md:left-[100px] lg:left-0">
+                        Federal II Tower</h1>
+                    <p
+                        class="text-white text-lg h-20 leading-6 mb-20 absolute top-[223px] w-auto md:w-8/12 md:h-[72px] md:top-[370px] md:left-[100px] lg:left-0">
+                        A sequel theme project for a tower originally built in the 1800s. We achieved this with a
+                        striking
+                        look of brutal minimalism with modern touches.
+                    </p>
+
+                    <a href="./portfolio.html"><button id="portfolio"
+                            class="bg-v-dark-blue w-btn-width h-btn-height text-white text-lg font-bold mr-14 absolute top-[378px] flex items-center justify-evenly md:left-[100px] md:top-[475px] lg:transition lg:delay-250 lg:ease-in lg:hover:bg-med-grey lg:left-0">
+                            See Our Portfolio <span class="flex items-center text-1xl">
+                                <ion-icon class="text-3xl" name="arrow-forward-outline"></ion-icon>
+                            </span>
+                        </button></a>
+                </div>
+            </div>
+
+            <div id="Trinity"
+                class="swiper-slide shadow-box-shadow bg-trinity-hero-mobile bg-center bg-no-repeat md:bg-trinity-hero-tablet lg:bg-trinity-hero-desktop">
+                <div id="trinity-content"
+                    class="w-4/5 mx-8 relative md:w-[576px] md:h-[355px] lg:w-9/12 lg:left-[190px] lg:right-[376px]">
+                    <h1
+                        class="text-5xl text-white w-auto h-24 mb-3 absolute mt-paramour-margin-top font-bold md:text-8xl md:w-95-width md:h-[160px] md:mt-0 md:top-[175px] md:left-[100px] lg:w-9/12 lg:left-0">
+                        Trinity Bank Tower</h1>
+                    <p
+                        class="text-white text-lg h-20 leading-6 mb-20 absolute top-[223px] w-auto md:w-80-width md:h-[72px] md:top-[370px] md:left-[100px] lg:w-9/12 lg:left-0">
+                        Trinity Bank challenged us to make a concept for a  84 story building located in the middle of a city with a high earthquake frequency. 
+                        For this project we used curves to blend design and stability to meet our objectives.
+                    </p>
+
+                    <a href="./portfolio.html"><button id="portfolio"
+                            class="bg-v-dark-blue w-btn-width h-btn-height text-white text-lg font-bold mr-14 absolute top-[420px] flex items-center justify-evenly md:top-[475px] md:left-[100px] lg:transition lg:delay-250 lg:ease-in lg:hover:bg-med-grey lg:left-0">
+                            See Our Portfolio <span class="flex items-center text-1xl">
+                                <ion-icon class="text-3xl" name="arrow-forward-outline"></ion-icon>
+                            </span>
+                        </button></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination "></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!--<div id="paramour"
+        class=" bg-paramour-hero-mobile bg-no-repeat bg-center md:bg-paramour-hero-tablet md:bg-no-repeat md:bg-center lg:bg-paramour-hero-desktop lg:bg-no-repeat lg:bg-center w-auto h-paramour-height md:h-[720px] md:mx-[98px] md:mt-14 lg:w-80-width">
+        <div id="paramour-content"
+            class="w-4/5 mx-8 relative md:w-8/12 md:h-[355px] lg:w-1/2 lg:left-[190px] lg:right-[376px]">
+            <h1
+                class="text-5xl text-white w-auto h-24 mb-3 absolute mt-paramour-margin-top font-bold md:text-8xl md:w-[457px] md:h-[160px] md:mt-0 md:top-[175px]">
+                Project Paramour</h1>
+            <p
+                class="text-white text-lg h-20 leading-6 mb-20 absolute top-[223px] w-auto md:w-[7.5/12] md:h-[72px] md:top-[370px]">
+                Project mode for an art museum near Southwest London. Project Paramour
+                is a statement of bold, modern architecture.
+            </p>
+
+            <a href="./portfolio.html"><button id="portfolio"
+                    class="bg-v-dark-blue w-btn-width h-btn-height text-white text-lg font-bold mr-14 absolute top-[378px] flex items-center justify-evenly md:top-[475px] lg:transition lg:delay-250 lg:ease-in lg:hover:bg-med-grey">
+                    See Our Portfolio <span class="flex items-center text-1xl">
+                        <ion-icon class="text-3xl" name="arrow-forward-outline"></ion-icon>
+                    </span>
+                </button></a>
+        </div>
+    </div>-->
+
+    <span
+        class="hidden md:block md:w-9/12 md:h-[200px] md:font-bold md:text-[120px] md:tracking-[-3px] md:text-v-light-grey md:mx-24 md:mt-[89px] md:text-center md:relative md:top-[55px] lg:text-[250px] lg:top-[-70px] ">Welcome</span>
+    <section id="welcome" class="w-auto lg:w-auto">
+        <div id="welcome-content" class="mx-8 mb-[113px] lg:flex lg:items-center lg:justify-evenly ">
+            <div class="lg:w-[446px] lg:h-[483px]">
+                <h2
+                    class="text-5xl font-bold leading-[52px] w-auto h-[104px] mt-[69px] mb-[22px] md:mr-[225px] md:ml-[97px] md:mb-[43px] md:text-7xl md:leading-[64px] md:tracking-[-2px] md:w-7/12 md:h-[128px] md:mt-0 lg:w-full lg:mr-0 lg:ml-0">
+                    Welcome to Arch Studio</h2>
+                <p
+                    class="text-lg text-dark-grey leading-6 font-medium mb-6 md:w-9/12 md:h-auto md:mb-6 md:m-auto lg:w-full">
+                    We have unique network and skillset to help bring your projects to life.
+                    Our small team of highly skilled individuals combined with our large network
+                    put us in a strong position to deliver exceptional results.
+                </p>
+
+                <p
+                    class="text-lg text-dark-grey leading-6 font-medium mb-6 md:w-9/12 md:h-auto md:mb-6 md:m-auto lg:w-full">
+                    Over the past 10 years, we have worked on all kinds of projects. From stations to high-rise
+                    buildings, we create
+                    spaces that inspire and delight.
+                </p>
+
+                <p class="text-lg text-dark-grey leading-6 font-medium md:w-9/12 md:h-auto md:m-auto lg:w-full">
+                    We work closely with our clients so that we understand the intricacies of each project.
+                    This allows us to work in harmony the surrounding area to create truly stunning projects that will
+                    stand the test of time.
+                </p>
+            </div>
+            <div id="desktop-welcome-image" class="hidden lg:block lg:w-[350px] lg:h-[568px] lg:relative">
+                <img class="lg:absolute lg:w-[350px] lg:h-[568px]" src="/assets/home/desktop/image-welcome.jpg"
+                    alt="image-welcome">
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us"
+        class="bg-about-us bg-no-repeat bg-cover bg-center w-auto h-[560px] md:w-9/12 md:mx-[98px] md:h-[560px] md:mb-[200px] lg:w-80-width lg:bg-none lg:relative">
+        <img class="hidden lg:block lg:absolute" src="/assets/home/desktop/image-small-team.jpg" alt="image-small-team">
+        <article id="about-content" class="mx-8 relative md:w-[445px] md:h-[225px] lg:absolute ">
+            <h2
+                class="w-auto h-[104px] text-white text-5xl font-bold leading-[52px] tracking-[-1.71px] absolute top-[181px] md:w-[445px] md:h-[152px] md:text-7xl md:leading-[64px] lg:left-[190px]">
+                Small team, big ideas</h2>
+            <a href="./about.html"><button id="about-button"
+                class="bg-v-dark-blue w-btn-width h-btn-height text-white text-lg font-bold absolute top-[308px] flex items-center justify-evenly md:top-[335px] lg:left-[190px] lg:transition lg:delay-250 lg:ease-in lg:hover:bg-med-grey">About
+                us <span class="flex items-center text-1xl">
+                    <ion-icon class="text-3xl" name="arrow-forward-outline"></ion-icon>
+                </span></button></a>
+        </article>
+
+    </section>
+
+    <section id="featured">
+        <article id="featured-content">
+            <div id="featured-title"
+                class="md:flex md:items-center md:justify-between md:mx-[98px] md:mb-[85px] md:w-[573px] lg:w-80-width lg:mx-auto">
+                <h2
+                    class="text-v-dark-blue font-bold text-5xl tracking-[-1.71px] w-auto h-[52px] mx-8 mb-[43px] mt-[73px] md:text-7xl md:m-0">
+                    Featured</h2>
+                <a href="./portfolio.html"><button id="see-all-tablet"
+                        class="bg-v-dark-blue w-[172px] h-btn-height text-white text-lg font-bold items-center justify-evenly hidden md:inline-flex lg:transition lg:delay-250 lg:ease-in lg:hover:bg-med-grey">See
+                        all <span class="flex items-center text-1xl">
+                            <ion-icon class="text-3xl" name="arrow-forward-outline"></ion-icon>
+                        </span></button></a>
+            </div>
+            <div id="featured-images" class="flex flex-col items-center gap-6 lg:w-80-width lg:flex-row lg:mx-auto">
+                <div id="del-sol"
+                    class="bg-del-sol-mobile shadow-box-shadow bg-no-repeat bg-center bg-cover w-[311px] h-[240px] relative md:shadow-box-shadow md:w-[573px] md:h-[240px] lg:w-[350px] lg:h-[560px] lg:bg-none">
+                    <img class="hidden lg:block" src="/assets/portfolio/desktop/image-del-sol.jpg" alt="image-del-sol">
+                    <span
+                        class="hidden z-10 md:block md:w-[82px] md:h-[200px] md:font-bold md:text-[250px] md:absolute md:top-[-60px] md:left-[414px] md:opacity-50 md:text-v-light-grey md:right-[16px] md:bottom-[11px] lg:left-[210px]">1</span>
+                    <h3 class="text-white font-bold text-[32px] absolute top-[153px] ml-6 lg:top-[380px]">Project Del
+                        Sol</h3>
+                    <a href="/"
+                        class="no-underline text-white text-lg leading-6 font-medium absolute ml-6 top-[193px] lg:top-[430px]">View
+                        All Projects</a>
+                </div>
+
+                <div id="228b"
+                    class="relative bg-228B-mobile bg-no-repeat bg-center bg-cover w-[311px] h-[240px] md:w-[573px] md:h-[240px] lg:w-[350px] lg:h-[560px] lg:bg-none">
+                    <img class="hidden lg:block" src="/assets/portfolio/desktop/image-228b.jpg" alt="image-228b">
+                    <span
+                        class="hidden z-10 md:block md:w-[82px] md:h-[200px] md:font-bold md:text-[250px] md:absolute md:top-[-60px] md:left-[414px] md:opacity-50 md:text-v-light-grey md:right-[16px] md:bottom-[11px] lg:left-[175px]">2</span>
+                    <h3
+                        class="text-white font-bold text-[32px] absolute top-[153px] ml-6 lg:bottom-[63px] lg:top-[380px]">
+                        228B Tower</h3>
+                    <a href="/"
+                        class="no-underline text-white text-lg leading-6 font-medium absolute ml-6 top-[193px] lg:top-[430px]">View
+                        All Projects</a>
+                </div>
+
+                <div id="prototype"
+                    class="relative bg-prototype-mobile shadow-box-shadow bg-no-repeat bg-center bg-cover w-[311px] h-[240px] md:shadow-box-shadow md:w-[573px] md:h-[240px] lg:w-[350px] lg:h-[560px] lg:bg-none">
+                    <img class="hidden lg:block" src="/assets/portfolio/desktop/image-prototype.jpg"
+                        alt="image-prototype">
+                    <span
+                        class="hidden z-10 md:block md:w-[82px] md:h-[200px] md:font-bold md:text-[250px] md:absolute md:top-[-60px] md:left-[414px] md:opacity-50 md:text-v-light-grey md:right-[16px] md:bottom-[11px] lg:left-[175px]">3</span>
+                    <h3 class="text-white font-bold text-[32px] absolute top-[153px] ml-6 lg:top-[380px]">Le Prototype
+                    </h3>
+                    <a href="/"
+                        class="no-underline text-white text-lg leading-6 font-medium absolute ml-6 top-[193px] lg:top-[430px]">View
+                        All Projects</a>
+                </div>
+                <button id="see-all"
+                    class="bg-v-dark-blue w-[311px] h-btn-height text-white text-lg font-bold flex items-center justify-evenly md:hidden lg:transition lg:delay-250 lg:ease-in lg:hover:bg-med-grey">See
+                    all <span class="flex items-center text-1xl">
+                        <ion-icon class="text-3xl" name="arrow-forward-outline"></ion-icon>
+                    </span></button>
+            </div>
+        </article>
+    </section>
+
+    <div id="square-arch"
+        class="w-[120px] h-[120px] bg-v-dark-blue flex items-center justify-center relative left-[128px] right-[128px] top-[72px] bottom-[33px] z-10 md:left-0 md:bottom-[46px] md:top-[120px] lg:w-[200px] lg:h-[200px] lg:left-[120px] lg:top-[200px]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="97" height="40">
+            <path fill="#fff"
+                d="M10.822 39.27l2.26-6.256h13.836l2.26 6.255H40L24.658 1.6h-9.316L0 39.268h10.822zM23.493 24.2h-6.986L20 15.252l3.493 8.95zm21.804 15.07V27.807c0-.776.22-1.499.662-2.169a5.14 5.14 0 011.746-1.632A4.51 4.51 0 0150 23.379c.64 0 1.343.13 2.112.388.769.259 1.434.601 1.998 1.028l3.972-7.991c-.654-.487-1.484-.883-2.488-1.188-1.005-.304-1.956-.456-2.854-.456-1.385 0-2.729.354-4.03 1.061-1.301.708-2.44 1.694-3.413 2.957V15.89h-9.498v23.38h9.498zm18.995.73c1.507 0 2.942-.21 4.304-.628 1.362-.418 2.439-.91 3.23-1.472l-3.105-6.393c-.289.198-.688.377-1.198.536-.51.16-1.07.24-1.678.24-.99 0-1.85-.217-2.58-.65a4.449 4.449 0 01-1.678-1.724 4.806 4.806 0 01-.582-2.33c0-.669.163-1.369.49-2.1.328-.73.845-1.347 1.553-1.849s1.625-.753 2.751-.753c1.187 0 2.161.258 2.922.776l3.105-6.393c-.76-.578-1.841-1.073-3.242-1.484a15.324 15.324 0 00-4.337-.616c-1.903 0-3.665.346-5.286 1.039-1.62.692-3.029 1.628-4.224 2.808a13.053 13.053 0 00-2.785 3.995 11.177 11.177 0 00-.993 4.6c0 1.69.354 3.285 1.062 4.784.707 1.5 1.678 2.82 2.91 3.961a13.79 13.79 0 004.258 2.683c1.606.647 3.307.97 5.103.97zm14.703-.73V26.392c0-.792.16-1.477.48-2.055a3.374 3.374 0 011.347-1.347c.578-.32 1.248-.48 2.01-.48 1.156 0 2.084.354 2.784 1.062.7.708 1.05 1.648 1.05 2.82v12.876h9.498V24.338c0-1.75-.41-3.314-1.232-4.692a9.088 9.088 0 00-3.345-3.276c-1.408-.807-3.003-1.21-4.783-1.21-1.4 0-2.782.255-4.144.765a12.064 12.064 0 00-3.665 2.157V0h-9.497v39.27h9.497z" />
+        </svg>
+    </div>
+
+    <footer
+        class="w-full bg-v-light-grey h-[383px] relative md:h-[120px] md:w-10/12 lg:w-80-width lg:mx-auto lg:h-[200px]">
+        <ul id="footer-contact"
+            class="flex flex-col items-center gap-8 mx-[152px] mb-[31px] relative top-[93px] text-lg text-med-grey font-bold w-[80px] md:left-[40px] md:right-[40px] md:top-[46px] md:bottom-[46px] md:flex-row md:w-[313px] lg:left-[85px] lg:top-[88px] lg:bottom-[88px] ">
+            <li><a class="lg:hover:text-v-dark-blue lg:transition lg:delay-250 lg:ease-in"
+                    href="./portfolio.html">Portfolio</a></li>
+            <li><a class="lg:hover:text-v-dark-blue lg:transition lg:delay-250 lg:ease-in" href="./about.html">About
+                    Us</a></li>
+            <li><a class="lg:hover:text-v-dark-blue lg:transition lg:delay-250 lg:ease-in"
+                    href="./contact.html">Contact</a></li>
+        </ul>
+
+        <a href="./portfolio.html"><button id="footer-portfolio"
+                class="bg-v-dark-blue w-[311px] h-btn-height text-white text-lg font-bold flex items-center justify-evenly absolute top-[260px] right-[32px] md:right-0 md:bottom-6 md:top-[30px] md:w-[252px] md:left-[516px] lg:left-[990px] lg:top-[64px] lg:bottom-[64px] lg:transition lg:delay-250 lg:ease-in lg:hover:bg-med-grey">
+                See Our Portfolio <span class="flex items-center text-1xl">
+                    <ion-icon class="text-3xl" name="arrow-forward-outline"></ion-icon>
+                </span>
+            </button></a>
+    </footer>
+
+<!--For Mobile menu-->
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('flex'), list.classList.remove('hidden')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('flex'), list.classList.add('hidden'))
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
