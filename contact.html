@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin="" defer></script>
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <title>Arch Studio - About Us</title>
+    <script src="/dist/contact.html" defer></script>
+    <title>Arch Studio - Contact Us</title>
 </head>
 
 <body class="font-league-spartan">
@@ -47,22 +54,20 @@
         <span id="line"
             class="hidden md:block md:h-[1px] md:w-[104px] md:bg-light-grey md:absolute md:top-[101px]"></span>
         <span id="side-label"
-            class="hidden md:block md:text-light-grey md:font-medium md:text-lg md:tracking-[18px] md:uppercase md:left-[152px] md:bottom-[50px] md:top-[85px] md:absolute md:w-[400px]">About
-            Us</span>
+            class="hidden md:block md:text-light-grey md:font-medium md:text-lg md:tracking-[18px] md:uppercase md:left-[152px] md:bottom-[50px] md:top-[85px] md:absolute md:w-[400px]">Contact</span>
     </div>
 
-
     <div id="hero-image-mobile" class="md:relative lg:h-[800px]">
-        <img src="/assets/about/mobile/image-hero.jpg" alt="image-hero-mobile" class="md:hidden lg:hidden">
-        <img src="/assets/about/tablet/image-hero.jpg" alt="image-hero-tablet"
+        <img src="/assets/contact/mobile/image-hero.jpg" alt="image-hero-mobile" class="md:hidden lg:hidden">
+        <img src="/assets/contact/tablet/image-hero.jpg" alt="image-hero-tablet"
             class="hidden md:block lg:hidden md:mx-auto">
-        <img src="/assets/about/desktop/image-hero.jpg" alt="image-hero-desktop"
+        <img src="/assets/contact/desktop/image-hero.jpg" alt="image-hero-desktop"
             class="hidden md:hidden lg:block lg:ml-[160px]">
         <div class="hidden md:block md:absolute md:z-10 md:top-[204px] md:left-[278px] lg:top-[100px] lg:left-[480px]">
             <span
-                class=" text-v-light-grey text-[120px] tracking-[-3px] leading-[200px] font-bold h-[200px] w-[400px] lg:text-[250px]">About</span>
+                class=" text-v-light-grey text-[120px] tracking-[-3px] leading-[200px] font-bold h-[200px] w-[400px] lg:text-[250px]">Contact</span>
         </div>
-        <section id="professional-desktop"
+        <section id="project-desktop"
             class="hidden w-90-width h-[411px] relative bg-white my-0 ml-0 mr-auto top-[-50px] md:h-[431px] md:w-9/12 md:top-[-430px] md:left-[155px] md:hidden lg:block lg:w-4/6 lg:h-[503px] lg:mx-auto lg:top-[-500px]">
             <article class="md:w-80-width lg:w-56-width lg:mx-auto">
                 <div id="rectangle-tablet"
@@ -70,13 +75,11 @@
                 </div>
                 <h2
                     class="font-bold text-5xl leading-[52px] tracking-[-1.2px] text-v-dark-blue mb-[21px] pt-[50px] ml-8 md:pt-[162px] md:ml-14 md:text-7xl md:w-full">
-                    Your team of professionals</h2>
-                <p class="font-medium text-med-grey text-lg ml-8 md:ml-14">Our small team of word-class professionals
-                    will work with
-                    you every step of the way.
-                    Strong relationships are at the core of everything we do. This extends to the relationship our
-                    projects
-                    have with their surroundings.
+                    Tell us about your project</h2>
+                <p class="font-medium text-med-grey text-lg ml-8 md:ml-14">We'd love to hear more about your project.
+                    Please, leave a message below or give us a call. We have two offices, one in Texas and one in
+                    Tennessee.
+                    If you find yourself nearby, come say hello!
                 </p>
             </article>
         </section>
@@ -84,114 +87,97 @@
     </div>
 
 
-    <section id="professional"
+    <section id="project"
         class="w-90-width h-[411px] relative bg-white my-0 ml-0 mr-auto top-[-50px] md:h-[431px] md:w-9/12 md:top-[-430px] md:left-[155px] lg:hidden">
         <article class="md:w-80-width">
             <div id="rectangle-tablet"
-                class="w-rectangle-width h-[1px] bg-light-grey ml-8 md:z-10 md:top-[110px] md:left-[25px] md:absolute">
+                class="w-rectangle-width h-[1px] bg-light-grey ml-8 md:z-10 md:top-[110px] md:left-[25px] md:absolute md:w-16">
             </div>
             <h2
                 class="font-bold text-5xl leading-[52px] tracking-[-1.2px] text-v-dark-blue mb-[21px] pt-[50px] ml-8 md:pt-[162px] md:ml-14 md:text-7xl md:w-full">
-                Your team of professionals</h2>
-            <p class="font-medium text-med-grey text-lg ml-8 md:ml-14">Our small team of word-class professionals will
-                work with
-                you every step of the way.
-                Strong relationships are at the core of everything we do. This extends to the relationship our projects
-                have with their surroundings.
+                Tell us about your project</h2>
+            <p class="font-medium text-med-grey text-lg ml-8 md:ml-14">We'd love to hear more about your project.
+                Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee.
+                If you find yourself nearby, come say hello!
             </p>
         </article>
     </section>
 
-    <div id="rectangle" class="w-rectangle-width h-[1px] bg-light-grey ml-8 md:w-16 md:ml-24 lg:ml-[175px]"></div>
+    <div id="rectangle" class="w-rectangle-width h-[1px] bg-light-grey ml-8 md:w-16 md:ml-24 lg:ml-64"></div>
 
-    <section id="heritage" class="mx-8 mt-[68px] md:w-3/4 md:mx-auto lg:flex lg:justify-evenly lg:gap-[124px]">
-        <article class="flex flex-col justify-center gap-[22px] lg:w-40-width">
+    <section id="contact" class="mb-[276px] mx-8 mt-[68px] md:w-3/4 md:mx-auto lg:flex lg:justify-evenly lg:gap-[124px] ">
+        <article class="flex flex-col justify-center gap-[40px] lg:flex-row lg:justify-evenly lg:w-90-width lg:gap-[30px]">
             <h2
-                class="w-9/12 font-bold text-5xl leading-[52px] tracking-[-1.2px] text-v-dark-blue md:text-7xl md:w-70-width lg:mb-[51px]">
-                Our Heritage</h2>
-            <p class="text-med-grey text-lg ">Founded in 2007, we started as a trio of architects. Our complementary
-                skills and relentless attention to detail turned
-                Arch into one of the most sought after boutique firms in the country.
-            </p>
-            <p class="text-med-grey text-lg ">Specializing in Urban Design allowed us to focus on creating exceptional
-                structures that live in harmony with their surroundings.
-                We consider every detail from every surrounding element to inform our designs.
-            </p>
-            <p class="text-med-grey text-lg ">Our small team of word-class professionals provides input on every
-                project.</p>
-        </article>
-        <div id="heritage-image" class="hidden md:hidden lg:block">
-            <img class="lg:h-full" src="/assets/about/desktop/image-heritage.jpg" alt="image-heritage">
-        </div>
-    </section>
-
-    <section id="leaders" class="mt-[112px]">
-        <article class="lg:flex lg:justify-evenly">
-            <h2
-                class="w-8/12 font-bold text-5xl leading-[52px] tracking-[-1.2px] text-v-dark-blue ml-8 mb-[55px] md:text-7xl md:w-3/6 lg:text-7xl lg:w-3/12">
-                The
-                Leaders</h2>
-
-            <div id="leader-grid"
-                class="grid justify-center gap-20 md:grid-cols-2-auto-col md:grid-rows-2-auto-row md:gap-x-3">
-                <div id="jake">
-                    <div class="img-wrapper">
-                        <img src="/assets/about/desktop/avatar-jake.jpg" alt="avatar-jake">
-                        <div class="img-content">
-                            <a href="/"><img src="/assets/icons/icon-twitter.svg" alt="icon-twitter"
-                                    class="hidden md:hidden lg:block"></a>
-                            <a href="/"><img src="/assets/icons/icon-linkedin.svg" alt="icon-linkedin"
-                                    class="hidden md:hidden lg:block"></a>
-                        </div>
-                    </div>
-                    <h3 class="text-v-dark-blue text-[32px] font-bold mt-6">Jake Richards</h3>
-                    <p class="text-med-grey text-lg font-medium">Chief Architect</p>
+                class="w-9/12 font-bold text-5xl leading-[52px] tracking-[-1.2px] text-v-dark-blue md:text-7xl md:w-70-width lg:mb-[51px] lg:w-4/12">
+                Contact Details</h2>
+            <div id="main-office" class="md:flex md:justify-between md:items-center lg:flex-col">
+                <div id="main-office-content">
+                    <h3 class="text-lg text-med-grey font-bold mb-[14px]">Main Office</h3>
+                    <p class="font-medium text-lg text-med-grey">Mail: archone@mail.com</p>
+                    <p class="font-medium text-lg text-med-grey">Address: 1892 Chenoweth Drive TN</p>
+                    <p class="font-medium text-lg text-med-grey">Phone: 123-456-3451</p>
                 </div>
 
-                <div id="maria">
-                    <div class="img-wrapper">
-                        <img src="/assets/about/desktop/avatar-maria.jpg" alt="avatar-maria">
-                        <div class="img-content">
-                            <a href="/"><img src="/assets/icons/icon-twitter.svg" alt="icon-twitter"
-                                    class="hidden md:hidden lg:block"></a>
-                            <a href="/"><img src="/assets/icons/icon-linkedin.svg" alt="icon-linkedin"
-                                    class="hidden md:hidden lg:block"></a>
-                        </div>
-                    </div>
-                    <h3 class="text-v-dark-blue text-[32px] font-bold mt-6">Maria Simpson</h3>
-                    <p class="text-med-grey text-lg font-medium">Senior Architect</p>
+                <div>
+                    <button
+                        class="flex justify-between w-2/4 items-center font-bold text-lg text-v-dark-blue mt-[43px] md:w-[180px] lg:hover:underline lg:hover:pointer g:transition lg:delay-250 lg:ease-in ">View
+                        on Map <span class="flex items-center text-1xl">
+                            <ion-icon class="text-3xl" name="arrow-forward-outline"></ion-icon>
+                        </span></button>
                 </div>
+            </div>
 
-                <div id="thompson">
-                    <div class="img-wrapper">
-                        <img src="/assets/about/desktop/avatar-thompson.jpg" alt="avatar-thompson">
-                        <div class="img-content">
-                            <a href="/"><img src="/assets/icons/icon-twitter.svg" alt="icon-twitter"
-                                    class="hidden md:hidden lg:block"></a>
-                            <a href="/"><img src="/assets/icons/icon-linkedin.svg" alt="icon-linkedin"
-                                    class="hidden md:hidden lg:block"></a>
-                        </div>
-                    </div>
-                    <h3 class="text-v-dark-blue font-bold text-[32px] mt-6">Thompson Smith</h3>
-                    <p class="text-med-grey text-lg font-medium">Head of Finance</p>
+            <div id="office-ii" class="md:flex md:justify-between md:items-center lg:flex-col">
+                <div id="office-ii-content">
+                    <h3 class="text-lg font-bold text-med-grey mb-[14px]">Office II</h3>
+                    <p class="font-medium text-lg text-med-grey">Mail: archtwo@mail.com</p>
+                    <p class="font-medium text-lg text-med-grey">Address: 3399 Wines Lane TX</p>
+                    <p class="font-medium text-lg text-med-grey">Phone: 832-123-4321</p>
                 </div>
-
-                <div id="jackson">
-                    <div class="img-wrapper">
-                        <img src="/assets/about/desktop/avatar-jackson.jpg" alt="avatar-jackson">
-                        <div class="img-content">
-                            <a href="/"><img src="/assets/icons/icon-twitter.svg" alt="icon-twitter"
-                                    class="hidden md:hidden lg:block"></a>
-                            <a href="/"><img src="/assets/icons/icon-linkedin.svg" alt="icon-linkedin"
-                                    class="hidden md:hidden lg:block"></a>
-                        </div>
-                    </div>
-                    <h3 class="text-v-dark-blue font-bold text-[32px] mt-6">Jackson Rourke</h3>
-                    <p class="text-med-grey text-lg font-medium">Lead Designer</p>
+                <div>
+                    <button
+                        class="flex justify-between w-2/4 items-center font-bold text-lg text-v-dark-blue mt-[43px] md:w-[180px] lg:transition lg:delay-250 lg:ease-in lg:hover:underline lg:hover:pointer">View
+                        on Map <span class="flex items-center text-1xl">
+                            <ion-icon class="text-3xl" name="arrow-forward-outline"></ion-icon>
+                        </span></button>
                 </div>
             </div>
         </article>
     </section>
+
+    <div id="map" class="h-[560px]">
+        <!--<img src="/assets/contact/mobile/image-map.png" alt="image-map-mobile" class="md:hidden lg:hidden">
+        <img src="/assets/contact/tablet/image-map.png" alt="image-map-tablet"
+            class="hidden md:block lg:hidden md:mx-auto">
+        <img src="/assets/contact/desktop/image-map.png" alt="" class="hidden md:hidden lg:block lg:mx-auto">-->
+    </div>
+
+    <article id="form-container" class="mx-8 my-[73px] md:mx-[98px] md:my-[200px] lg:flex lg:gap-[30px]">
+        <h2 class="w-70-width text-5xl font-bold tracking-[-1.71px] md:text-7xl md:w-full lg:w-4/12">Connect with us</h2>
+
+        <form class="flex flex-col gap-[43px] mt-[42px] lg:w-8/12">
+            <div class="lg:transition lg:delay-300 lg:ease-in lg:hover:cursor-pointer">
+            <label for="name" class="text-xl font-bold tracking-[-0.31px] text-light-grey ml-[35px]">Name</label>
+            <input type="text" required class="border-b-2 border-b-v-dark-blue border-solid w-full">
+            </div>
+
+            <label for="email" class="text-xl font-bold tracking-[-0.31px] text-light-grey ml-[35px]">Email</label>
+            <input type="email" required class="border-b-2 border-b-v-dark-blue border-solid">
+
+            <label for="message" class="text-xl font-bold tracking-[-0.31px] text-light-grey ml-[35px]">Message</label>
+            <textarea name="message" class="border-b-2 border-b-v-dark-blue h-[92px]"></textarea>
+            <button type="submit" class="bg-v-dark-blue w-[80px] h-[80px] ml-auto lg:transition lg:delay-250 lg:ease-in lg:hover:bg-med-grey"><span
+                    class="flex items-center text-1xl">
+                    <ion-icon class="text-3xl text-white mx-auto" name="arrow-forward-outline"></ion-icon>
+                </span></button>
+        </form>
+    </article>
+
+
+
+
+
+
 
     <div id="square-arch"
         class="w-[120px] h-[120px] bg-v-dark-blue flex items-center justify-center relative left-[128px] right-[128px] top-[72px] bottom-[33px] z-10 md:left-0 md:bottom-[46px] md:top-[120px] lg:w-[200px] lg:h-[200px] lg:left-[120px] lg:top-[200px]">
@@ -220,7 +206,6 @@
                 </span>
             </button></a>
     </footer>
-
     <script>
         function Menu(e) {
             let list = document.querySelector('ul');
